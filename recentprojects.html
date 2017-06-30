@@ -42,6 +42,19 @@
       </nav>
       <article>
         <img class= friends src = "https://github.com/ehorta/portfolio/blob/gh-pages/recolored.jpg?raw=true">
+          $('.resizableImage').hover(function() {
+    $(this).data('width', $(this).width());
+    $(this).data('height', $(this).height());
+    $(this).css({
+        width: $(this).width() * 1.1,
+        height: $(this).height() * 1.1
+    });
+}, function() {
+    $(this).css({
+        width: $(this).data('width'),
+        height: $(this).data('height')
+    });
+});
         <img class= slide src="https://github.com/ehorta/portfolio/blob/master/airplanegame.png?raw=true">
       </article>
      
